@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/bootstrap-maizi.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <title>bootstrap项目实战</title>
 </head>
 <body>
@@ -41,7 +42,7 @@
 <section id="home">
     <div class="filter">
         <div class="container">
-            <div class="row">
+            <div class="row wow fadeInUp" data-wow-duration="1s">
                 <div class="col-md-1"></div>
                 <div class="col-md-10">
                     <h1>bootstrap实战课程等你来战！</h1>
@@ -61,7 +62,7 @@
 <!--bbs start-->
 <section id="bbs">
     <div class="container">
-        <div class="row">
+        <div class="row wow fadeInUp" data-wow-duration="0.5s">
             <div class="col-md-4">
                 <a href="https://www.baidu.com" target="_blank">
                     <img src="images/a.png" class="img-responsive" alt="">
@@ -91,13 +92,13 @@
 <!--html5 start-->
 <section id="html5">
     <div class="container">
-        <div class="col-md-6">
+        <div class="col-md-6 wow fadeInLeft">
             <h2>HTML5前端开发</h2>
             <p>一线资深前端开发工程师倾情打造！助你完成普通程序员到优秀工程师的华丽升级！</p>
             <p><span class="glyphicon glyphicon-grain mai-icon"></span>使用HTML5与CSS3技术轻松实现设备自适应展示。</p>
             <p><span class="glyphicon glyphicon-grain mai-icon"></span>清晰明了的语义代码结构，更高的可读性、更利于页面的维护。</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 wow fadeInRight">
             <img src="images/html5.jpg" class="img-responsive" alt="html5">
         </div>
     </div>
@@ -106,7 +107,7 @@
 
 <!--bootstrap start-->
 <section id="bootstrap">
-    <div class="container">
+    <div class="container wow fadeInUp">
         <div class="col-md-6">
             <img src="images/Bootstrap.jpg" class="img-responsive" alt="html5">
         </div>
@@ -122,7 +123,7 @@
 <!--course start-->
 <section id="course">
     <div class="container">
-        <div class="row">
+        <div class="row wow fadeIn" data-wow-duration="0.6s">
             <div class="col-md-12"><h2>最新课程</h2></div>
             <div class="col-md-3">
                 <div class="course">
@@ -180,7 +181,7 @@
 <!--app start-->
     <section id="app">
         <div class="container">
-           <div class="row">
+           <div class="row wow fadeInUp">
                <div class="col-md-6">
                    <h2>技术学院移动APP下载</h2>
                    <p>全新UI交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语音搜索课程，喊出你想要的课程，一件收藏，方便自己重复学习，离线下载课程，在哪都能开！</p>
@@ -203,7 +204,7 @@
     <div class="filter">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeInLeft">
                     <h2><span class="glyphicon glyphicon-send send"></span>联系我们</h2>
                     <p class="company_brief">技术学院是北京信息技术有限公司旗下的一个IT在线教育平台，目前已有30万的注册用户，10万以上APP下载量，5000小时视频内容。我们从不说空话，专注于IT在线教育，脱离传统教育的束缚，让你走哪学哪，想学就学。逗比的老师，贴心的助教，在这儿你能感受到来自五湖四海伙伴们的热情和踏实的学习态度。</p>
                     <address class="address">
@@ -212,7 +213,7 @@
                         <p><span class="glyphicon glyphicon-envelope address_icon"></span>邮箱:hr@43546764.qq.com</p>
                     </address>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 wow fadeInRight">
                     <form action="#" method="post">
                         <div class="col-md-6">
                             <input type="text" class="form-control" placeholder="您的姓名">
@@ -236,9 +237,38 @@
     </div>
 
 </section>
-
 <!--contact end-->
+
+<!--footer start-->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p>
+                    Copyright@2018-12-12 wwww.infomation.com 京ICP备13014270号-4
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--footer end-->
 <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery.singlePageNav.min.js"></script>
+<script src="./js/wow.min.js"></script>
+<script>
+    $(function () {
+        // 导航跳转效果插件
+        $('.nav').singlePageNav({
+            offset:70
+        });
+        // 小屏幕点击关闭菜单
+        $('.navbar-collapse a').click(function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+
+        new WOW().init();
+    })
+</script>
 </body>
 </html>
