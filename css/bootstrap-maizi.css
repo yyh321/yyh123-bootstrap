@@ -1,0 +1,33 @@
+body{
+    font-family: 'Microsoft YaHei',sans-serif;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border: none;
+    box-shadow: 0px 2px 8px 0px rgba(50,50,50,0.25);
+}
+.navbar-default .navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    color: #40d281;
+    height: 70px;
+    line-height: 35px;
+}
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    font-weight: bold;
+    height: 70px;
+    line-height: 40px;
+    color: #666;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #1c9982;
+}
+.navbar-default .navbar-toggle:hover {
+    border-color: #4042b1;
+    background-color: rgb(69,210,184);
+}
+.navbar-toggle {
+    margin-top: 17px;
+}
